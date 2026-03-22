@@ -1,0 +1,14 @@
+{
+    "iconDefinitions": {
+        "dk_file": {
+            "iconPath": "./dk-file.png"
+        }
+    },
+    "file": "_dk_file",
+    "fileExtensions": {
+        "dk": "dk_file"
+    },
+    "fileNames": {
+        "dk.mjs": "dk_file"
+    }
+}

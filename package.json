@@ -1,0 +1,95 @@
+{
+    "name": "dklang",
+    "displayName": "DkLang Support ✨",
+    "description": "Official VS Code extension for DkLang & DkScript by Dean Khalid. Includes modern syntax highlighting, snippets, file icons, and integrated runner.",
+    "version": "1.0.0",
+    "publisher": "Dean-Khalid",
+    "license": "MIT",
+    "icon": "images/icon.png",
+    "main": "./extension.js",
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets",
+        "Other"
+    ],
+    "keywords": [
+        "dklang",
+        "dkscript",
+        "javascript",
+        "language",
+        "dean khalid"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Dean-Khalid/dklang-vscode.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Dean-Khalid/dklang-vscode/issues"
+    },
+    "homepage": "https://github.com/Dean-Khalid/dklang-vscode#readme",
+    "contributes": {
+        "languages": [
+            {
+                "id": "dkscript",
+                "aliases": [
+                    "DkLang",
+                    "DkScript",
+                    "dklang",
+                    "dkscript"
+                ],
+                "extensions": [
+                    ".dk"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "dkscript",
+                "scopeName": "source.dkscript",
+                "path": "./syntaxes/dkscript.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "dkscript",
+                "path": "./snippets/snippets.json"
+            }
+        ],
+        "iconThemes": [
+            {
+                "id": "dklang-icons",
+                "label": "DkLang File Icons",
+                "path": "./icons/dk-icon-theme.json"
+            }
+        ],
+        "commands": [
+            {
+                "command": "dklang.runFile",
+                "title": "DkLang: Run Current File",
+                "category": "DkLang",
+                "icon": "$(play)"
+            }
+        ],
+        "menus": {
+            "editor/title": [
+                {
+                    "command": "dklang.runFile",
+                    "group": "navigation",
+                    "when": "resourceExtname == .dk"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "postinstall": "npm install",
+        "test": "node ./test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.75.0",
+        "@types/node": "16.x"
+    }
+}

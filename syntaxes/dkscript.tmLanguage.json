@@ -1,0 +1,54 @@
+{
+	"scopeName": "source.dkscript",
+	"name": "DkScript",
+	"patterns": [
+		{ "include": "#comments" },
+		{ "include": "#strings" },
+		{ "include": "#keywords" },
+		{ "include": "#values" },
+		{ "include": "#numbers" }
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{ "name": "comment.line.double-slash.dkscript", "begin": "//", "end": "$" },
+				{ "name": "comment.block.dkscript", "begin": "/\\*", "end": "\\*/" }
+			]
+		},
+		"strings": {
+			"patterns": [
+				{ "name": "string.quoted.double.dkscript", "begin": "\"", "end": "\"" },
+				{ "name": "string.quoted.single.dkscript", "begin": "'", "end": "'" },
+				{ "name": "string.template.dkscript", "begin": "`", "end": "`" }
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.dkscript",
+					"match": "\\b(when|other|thru|stay|stop|next|match|site|base|check|maybe|otherwise|nope|loop|repeat|until|within|inside|if|else|for|while|switch|case|default|in|of|return|break|continue)\\b"
+				},
+				{
+					"name": "keyword.declaration.dkscript",
+					"match": "\\b(draft|solid|keep|store|gift|fixed|lock|flow|step|mold|onto|parent|start|stable|action|task|class|extends|constructor|static|method)\\b"
+				},
+				{
+					"name": "keyword.other.dkscript",
+					"match": "\\b(show|talk|spill|shout|write|emit|give|deliver|quick|pause|make|grab|fetch|share|need|src|wipe|kind|kindof|test|trap|lastly|fire|attempt|handle|raise|is)\\b"
+				}
+			]
+		},
+		"values": {
+			"patterns": [
+				{ "name": "constant.language.boolean.dkscript", "match": "\\b(yeah|nah|correct|wrong|true|false)\\b" },
+				{ "name": "constant.language.null.dkscript", "match": "\\b(void|none|empty|null|undefined)\\b" },
+				{ "name": "variable.language.self.dkscript", "match": "\\b(self|me|this)\\b" }
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{ "name": "constant.numeric.dkscript", "match": "\\b\\d+(\\.\\d+)?\\b" }
+			]
+		}
+	}
+}

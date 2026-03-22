@@ -1,0 +1,104 @@
+{
+	"DkScript Show": {
+		"prefix": "show",
+		"body": [ "show(\"$1\");" ],
+		"description": "Log something to the console"
+	},
+	"DkScript Draft": {
+		"prefix": "draft",
+		"body": [ "draft ${1:name} = ${2:value};" ],
+		"description": "Declare a let variable"
+	},
+	"DkScript Solid": {
+		"prefix": "solid",
+		"body": [ "solid ${1:name} = ${2:value};" ],
+		"description": "Declare a const variable"
+	},
+	"DkScript When": {
+		"prefix": "when",
+		"body": [
+			"when (${1:condition}) {",
+			"\t$0",
+			"}"
+		],
+		"description": "If statement"
+	},
+	"DkScript When Other": {
+		"prefix": "whenother",
+		"body": [
+			"when (${1:condition}) {",
+			"\t$2",
+			"} other {",
+			"\t$0",
+			"}"
+		],
+		"description": "If/Else statement"
+	},
+	"DkScript Thru": {
+		"prefix": "thru",
+		"body": [
+			"thru (draft ${1:i} = 0; ${1:i} < ${2:length}; ${1:i}++) {",
+			"\t$0",
+			"}"
+		],
+		"description": "For loop"
+	},
+	"DkScript Stay": {
+		"prefix": "stay",
+		"body": [
+			"stay (${1:condition}) {",
+			"\t$0",
+			"}"
+		],
+		"description": "While loop"
+	},
+	"DkScript Flow": {
+		"prefix": "flow",
+		"body": [
+			"flow ${1:name}(${2:params}) {",
+			"\t$0",
+			"}"
+		],
+		"description": "Define a function"
+	},
+	"DkScript Quick Flow": {
+		"prefix": "quickflow",
+		"body": [
+			"quick flow ${1:name}(${2:params}) {",
+			"\t$0",
+			"}"
+		],
+		"description": "Define an async function"
+	},
+	"DkScript Mold": {
+		"prefix": "mold",
+		"body": [
+			"mold ${1:Name} {",
+			"\tstart(${2:params}) {",
+			"\t\t$3",
+			"\t}",
+			"\t",
+			"\tstep ${4:methodName}() {",
+			"\t\t$0",
+			"\t}",
+			"}"
+		],
+		"description": "Define a class"
+	},
+	"DkScript Test Trap": {
+		"prefix": "testtrap",
+		"body": [
+			"test {",
+			"\t$1",
+			"} trap (${2:err}) {",
+			"\t$0",
+			"}"
+		],
+		"description": "Try/Catch block"
+	},
+	"DkScript Make": {
+		"prefix": "make",
+		"body": [ "make ${1:ClassName}($2);" ],
+		"description": "New instance"
+	}
+}
