@@ -1,4 +1,4 @@
-# <img src="./images/icon.png" width="40" height="40"> DkScript Pro ✨
+# <img src="./images/icon.png" width="40" height="40"> DkScript 
 > Created by: **Dean Khalid**
 
 **DkScript Pro** is the official VS Code extension for the DkScript programming language. It provides a complete development environment for building beautiful, readable, and highly efficient applications with the unique DkScript syntax.
@@ -12,18 +12,6 @@
 - **▶️ One-Click Run**: Includes a "Play" button in the editor title to execute your `.dk` files instantly.
 - **🧩 Language Configuration**: Supports automatic bracket matching, auto-closing pairs, and smart indentation.
 - **📁 File Icon Support**: Automatically identifies `.dk` files with the official DkScript logo.
-
----
-
-## 🛠️ Installation
-
-### Manual Installation (Development Mode)
-1. Copy the `vscode-extension` folder.
-2. Navigate to your VS Code extensions directory:
-   - **Linux/macOS**: `~/.vscode/extensions`
-   - **Windows**: `%USERPROFILE%\.vscode\extensions`
-3. Paste and rename the folder to: `dean-khalid.dkscript-1.0.0`
-4. **Restart VS Code**.
 
 ---
 
@@ -74,10 +62,4 @@ For support or feature requests, please reach out to the project maintainer.
 
 **Happy Coding with DkScript!** 🚀✨
 # DkScript
-# DkScript
-# DkScript
-# DkScript
-# DkScript-Extension
-# DkScript-Extension
-# DkScript-Extension
-# DkScript-Extension
+
