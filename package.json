@@ -1,7 +1,7 @@
 {
-    "name": "dklang",
-    "displayName": "DkLang Support ✨",
-    "description": "Official VS Code extension for DkLang & DkScript by Dean Khalid. Includes modern syntax highlighting, snippets, file icons, and integrated runner.",
+    "name": "dkscript",
+    "displayName": "DkScript Support",
+    "description": "Official VS Code extension for DkScript by Dean Khalid. Includes modern syntax highlighting, snippets, file icons, and integrated runner.",
     "version": "1.0.0",
     "publisher": "Dean-Khalid",
     "license": "MIT",
@@ -16,8 +16,8 @@
         "Other"
     ],
     "keywords": [
-        "dklang",
         "dkscript",
+        "dklang",
         "javascript",
         "language",
         "dean khalid"
@@ -35,10 +35,10 @@
             {
                 "id": "dkscript",
                 "aliases": [
-                    "DkLang",
                     "DkScript",
-                    "dklang",
-                    "dkscript"
+                    "DkLang",
+                    "dkscript",
+                    "dklang"
                 ],
                 "extensions": [
                     ".dk"
@@ -61,23 +61,23 @@
         ],
         "iconThemes": [
             {
-                "id": "dklang-icons",
-                "label": "DkLang File Icons",
+                "id": "dkscript-icons",
+                "label": "DkScript File Icons",
                 "path": "./icons/dk-icon-theme.json"
             }
         ],
         "commands": [
             {
-                "command": "dklang.runFile",
-                "title": "DkLang: Run Current File",
-                "category": "DkLang",
+                "command": "dkscript.runFile",
+                "title": "DkScript: Run Current File",
+                "category": "DkScript",
                 "icon": "$(play)"
             }
         ],
         "menus": {
             "editor/title": [
                 {
-                    "command": "dklang.runFile",
+                    "command": "dkscript.runFile",
                     "group": "navigation",
                     "when": "resourceExtname == .dk"
                 }

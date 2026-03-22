@@ -2,27 +2,27 @@ const vscode = require('vscode');
 const path = require('path');
 
 /**
- * DkLang VS Code Extension Logic
+ * DkScript VS Code Extension Logic
  * Created by: Dean Khalid
  */
 function activate(context) {
-    console.log('DkLang Extension is now active!');
+    console.log('DkScript Extension is now active!');
 
-    // Command to run DkLang / DkScript
-    let disposable = vscode.commands.registerCommand('dklang.runFile', function () {
+    // Command to run DkScript
+    let disposable = vscode.commands.registerCommand('dkscript.runFile', function () {
         const editor = vscode.window.activeTextEditor;
         if (!editor) return;
 
         const filePath = editor.document.fileName;
         if (!filePath.endsWith('.dk')) {
-            vscode.window.showErrorMessage('File ini bukan file DkLang!');
+            vscode.window.showErrorMessage('File ini bukan file DkScript!');
             return;
         }
 
-        // We use the 'dklang' command which is now globally available via npm
-        const terminal = vscode.window.createTerminal('DkLang Runtime');
+        // We use the 'dkscript' command which should be globally available
+        const terminal = vscode.window.createTerminal('DkScript Runtime');
         terminal.show();
-        terminal.sendText(`dklang "${path.basename(filePath)}"`);
+        terminal.sendText(`dkscript "${path.basename(filePath)}"`);
     });
 
     context.subscriptions.push(disposable);

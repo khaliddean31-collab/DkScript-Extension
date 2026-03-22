@@ -4,7 +4,6 @@
             "iconPath": "./dk-file.png"
         }
     },
-    "file": "_dk_file",
     "fileExtensions": {
         "dk": "dk_file"
     },
