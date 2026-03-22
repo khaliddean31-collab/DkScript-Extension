@@ -3,7 +3,7 @@
     "displayName": "DkScript Support",
     "description": "Official VS Code extension for DkScript by Dean Khalid. Includes modern syntax highlighting, snippets, file icons, and integrated runner.",
     "version": "1.0.0",
-    "publisher": "Dean-Khalid",
+    "publisher": "DeanKhalid",
     "license": "MIT",
     "icon": "images/icon.png",
     "main": "./extension.js",
