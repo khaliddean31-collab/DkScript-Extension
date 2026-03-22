@@ -1,7 +1,7 @@
 # <img src="./images/icon.png" width="40" height="40"> DkScript 
 > Created by: **Dean Khalid**
 
-**DkScript Pro** is the official VS Code extension for the DkScript programming language. It provides a complete development environment for building beautiful, readable, and highly efficient applications with the unique DkScript syntax.
+**DkScript** is the official VS Code extension for the DkScript programming language. It provides a complete development environment for building beautiful, readable, and highly efficient applications with the unique DkScript syntax.
 
 ---
 
